@@ -3,8 +3,8 @@ import subprocess
 import shutil
 
 CRD_SSH_Code = input("Google CRD SSH Code :")
-username = "user" #@param {type:"string"}
-password = "" #@param {type:"string"}
+username = "root" #@param {type:"string"}
+password = "1234" #@param {type:"string"}
 os.system(f"useradd -m {username}")
 os.system(f"adduser {username} sudo")
 os.system(f"echo '{username}:{password}' | sudo chpasswd")
